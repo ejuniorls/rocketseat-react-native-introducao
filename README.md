@@ -1,0 +1,1 @@
+ANDROID_HOME="/mnt/c/Users/edmir.junior/AppData/Local/Android/Sdk" npx expo start --tunnel
