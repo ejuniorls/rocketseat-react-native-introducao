@@ -1,5 +1,4 @@
 import {Text, TouchableOpacity, TouchableOpacityProps} from "react-native";
-import {CircleCheck} from "lucide-react-native";
 
 import {styles} from "./styles";
 
@@ -20,7 +19,7 @@ export function Filter({status, isActive, ...rest}: Props) {
         >
             <StatusIcon status={status} />
             <Text style={styles.title}>
-                {status === FilterStatus.DONE ? "Compradossss" : "Pendentes"}
+                {status === FilterStatus.DONE ? "Comprados" : "Pendentes"}
             </Text>
         </TouchableOpacity>
     );
