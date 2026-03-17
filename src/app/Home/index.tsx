@@ -143,21 +143,21 @@ export function Home() {
                     </TouchableOpacity>
                 </View>
 
-                <FlatList
-                    data={ITEMS}
-                    keyExtractor={(item) => item.id}
-                    renderItem={({item}) => (
-                        <Item
-                            data={item}
-                            onStatus={() => console.log("mudar o status")}
-                            onRemove={() => console.log("remover")}
-                        />
-                    )}
-                    showsVerticalScrollIndicator={false}
-                    ItemSeparatorComponent={() => <View style={styles.separator}/>}
-                    contentContainerStyle={styles.listContent}
-                    ListEmptyComponent={() => <Text style={styles.empty}>Nenhum item aqui =/</Text>}
-                />
+                {/*<FlatList*/}
+                {/*    data={ITEMS}*/}
+                {/*    keyExtractor={(item) => item.id}*/}
+                {/*    renderItem={({item}) => (*/}
+                {/*        <Item*/}
+                {/*            data={item}*/}
+                {/*            onStatus={() => console.log("mudar o status")}*/}
+                {/*            onRemove={() => console.log("remover")}*/}
+                {/*        />*/}
+                {/*    )}*/}
+                {/*    showsVerticalScrollIndicator={false}*/}
+                {/*    ItemSeparatorComponent={() => <View style={styles.separator}/>}*/}
+                {/*    contentContainerStyle={styles.listContent}*/}
+                {/*    ListEmptyComponent={() => <Text style={styles.empty}>Nenhum item aqui =/</Text>}*/}
+                {/*/>*/}
 
 
                 {/*{ITEMS.map((value) => {*/}
