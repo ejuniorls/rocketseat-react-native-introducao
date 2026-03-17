@@ -1,4 +1,4 @@
-import {Image, Text, TouchableOpacity, View} from "react-native";
+import {Image, Text, TouchableOpacity, View, ScrollView} from "react-native";
 
 import {Button} from "@/components/Button";
 import {Filter} from "@/components/Filter";
@@ -37,12 +37,22 @@ export function Home() {
                         <Text style={styles.clearText}>Limpar</Text>
                     </TouchableOpacity>
                 </View>
+                <ScrollView>
+                    {
+                        Array.from({length: 100}).map((value, index) => {
+                            console.log(index);
 
-                <Item
-                    data={{status: FilterStatus.DONE, description: "café"}}
-                    onStatus={() => console.log("mudar o status")}
-                    onRemove={() => console.log("remover")}
-                />
+                            return (
+                                <Item
+                                    key={index}
+                                    data={{status: FilterStatus.DONE, description: "café"}}
+                                    onStatus={() => console.log("mudar o status = " + index)}
+                                    onRemove={() => console.log("remover")}
+                                />
+                            );
+                        })
+                    }
+                </ScrollView>
             </View>
         </View>
     );
